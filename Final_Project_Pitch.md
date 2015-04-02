@@ -1,9 +1,17 @@
-### April 1: Final Project Elevator Pitch
+# Final Project Elevator Pitch -- Michael Malione
 
-The Final Project Elevator Pitch includes both a short (one paragraph) write-up of your proposed project topic and a concise (<90 seconds) presentation to the class. The elevator pitch should include:
+## Project Statement and Goal
+For my Final Project, I'm going to design and build an entry in the Kaggle Challenge entitled "Diabetic Retinopathy Detection".
+* http://www.kaggle.com/c/diabetic-retinopathy-detection
 
-* A concise statement of the goal of your project
-* What question or questions you hope to answer
-* What data set you plan to use and how you will obtain the data
+THe goal of this project is to analyze digital retina images and create a learning model that predicts a staged diagnosis of the condition, which will be scored according to the quadratic weighted kappa, which measures the agreement between two ratings. My machine ratings will be compared to diagnostic ratings that were compiled manually.
+* http://www.kaggle.com/c/diabetic-retinopathy-detection/evaluation
+
+The question I hope to answer is whether I can develop a learning model that achieves results that are good enough to place me well on the competition's Leader Board. I'm eager to see how high of a kappa score I can achieve, and given my prior domain specific experience with computer grahics, image processing, and computer vision, I'm hoping to build a system that is actually quite effective. For sake of the final project, getting such a system up and running, and going through the steps of training and validating it, will be a constructive experience.
+
+The data set is provided in the Kaggle competitions. It consists of some 44,350 pairs of color retinal scan images, each pair from an individual who has been diagnosed for DR on the integer scale from 0 to 4. Given that there is some 95 GB of data here, I'm expecting to use AWS to run much of the analysis. A big part of this project will entail feature engineering, and even though this project won't involve typical munging as we've learned it in class, I'll need to write custom image processing software to detact and extract relevant features from the images, so there will plenty of clean-up code required.
+
 * What type of machine learning problem this is (from our 2x2 matrix)
+This is a classification problem, supervised and categorical
+
 * Why you chose this project
