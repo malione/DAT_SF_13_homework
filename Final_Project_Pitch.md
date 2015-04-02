@@ -8,7 +8,7 @@ The goal of this project is to analyze digital retina images and create a learni
 * http://www.kaggle.com/c/diabetic-retinopathy-detection/details/evaluation
 
 ### What question or questions do I hope to answer?
-The question I hope to answer is whether I can develop a learning model that achieves results that are good enough to place me well on the competition's Leader Board. I'm eager to see how high of a kappa score I can achieve, and given my prior domain specific experience with computer grahics, image processing, and computer vision, I'm hoping to build a system that is actually quite effective. For sake of the final project, getting such a system up and running, and going through the steps of training and validating it, will be a constructive experience.
+The question I hope to answer is whether I can develop a learning model that achieves results that are good enough to place me well on the competition's Leader Board. I'm eager to see how high of a kappa score I can achieve, and given my prior domain specific experience with computer grahics, image processing, and computer vision, I'm hoping to build a system that is actually quite effective. For sake of the final project, getting such a system up and running, and going through the steps of training and validating it, will both be constructive experiences.
 
 ### What data set do I plan to use, and how you will obtain the data?
 The data set is provided in the Kaggle competition. It consists of some 44,350 pairs of color retinal scan images, each pair from an individual who has been diagnosed for DR on the integer scale from 0 to 4. Given that there is some 95 GB of data here, I'm expecting to use AWS to run much of the analysis. A big part of this project will entail feature engineering, and even though this project won't involve typical munging as we've learned it in class, I'll need to write custom image processing software to detact and extract relevant features from the images, so there will plenty of clean-up code required.
@@ -17,7 +17,7 @@ The data set is provided in the Kaggle competition. It consists of some 44,350 p
 This is a classification problem, supervised and categorical.
 
 ### Why did I choose this project?
-* I'm interested in applying data science to areas of medicine.
+* I'm interested in applying data science in the field of medicine.
 * I have relevant domain specific experience.
 * The data set is large and interesting.
 * The project has a really good machine learning component to it.
