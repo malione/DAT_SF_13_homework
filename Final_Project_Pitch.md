@@ -13,6 +13,8 @@ The question I hope to answer is whether I can develop a learning model that ach
 ### What data set do I plan to use, and how you will obtain the data?
 The data set is provided in the Kaggle competition. It consists of some 44,350 pairs of color retinal scan images, each pair from an individual who has been diagnosed for DR on the integer scale from 0 to 4. Given that there is some 95 GB of data here, I'm expecting to use AWS to run much of the analysis. A big part of this project will entail feature engineering, and even though this project won't involve typical munging as we've learned it in class, I'll need to write custom image processing software to detact and extract relevant features from the images, so there will plenty of clean-up code required.
 
+[Sample Data](diagnosis_levels.md)
+
 ### What type of machine learning problem is this? (from our 2x2 matrix)
 This is a classification problem, supervised and categorical.
 
