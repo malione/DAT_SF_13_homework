@@ -16,7 +16,7 @@ The data set is provided in the Kaggle competition. It consists of some 44,350 p
 [Sample Data](diagnosis_levels.md)
 
 ### What type of machine learning problem is this? (from our 2x2 matrix)
-This is a classification problem, supervised and categorical.
+This is a classification problem, supervised and categorical. I expect to use a random forest of decision trees, or perhaps some other ML approach that we haven't studied in as much depth yet.
 
 ### Why did I choose this project?
 * I'm interested in applying data science in the field of medicine.
