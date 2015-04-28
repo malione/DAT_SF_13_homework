@@ -1,27 +1,23 @@
-## Final Project Elevator Pitch -- Michael Malione
+## New Final Project -- Michael Malione
 
 ### Project Statement and Goal
-For my Final Project, I'm going to design and build an entry for the Kaggle Competition entitled "Diabetic Retinopathy Detection".
-* http://www.kaggle.com/c/diabetic-retinopathy-detection
+My original Final Project turned out to be too difficult and time-consuming for the scope of this class. For this reason, I've decided to change my final project plan. Instead of doing the Kaggle competition for diabetic retinopathy, I've decided to do some data analysis and prediction on the Social Security baby names database.
+* http://www.ssa.gov/oact/babynames/limits.html
 
-The goal of this project is to analyze digital retina images and create a learning model that predicts a staged diagnosis of the condition, which will be scored according to the quadratic weighted kappa. This metric measures the agreement between two ratings. My machine ratings will be compared to diagnostic ratings that were compiled manually and provided with the dataset.
-* http://www.kaggle.com/c/diabetic-retinopathy-detection/details/evaluation
+The goal of this project is to depict the changing popularity of names over the course of time and, in the spirit of Freakonomics, to corroborate these data with other social media and leadership directories to predict the popularity changes of a particular name from year to year, along with the economic prospects associated with having a particular name. I'm still putting together my plan for this project, so it's very rough right now. I plan to create a learning model that will look at previous popularity trends in conjunction with a handful of search engine and social media compilations to predict how many children will be given that name in the following year. My goal is to predict the 2014 name popularities before they are released. I also plan to consider the economics prospects of a particular given name, looking at birth names from 20 to 60 years ago.
 
 ### What question or questions do I hope to answer?
-The question I hope to answer is whether I can develop a learning model that achieves results that are good enough to place me well on the competition's Leader Board. I'm eager to see how high of a kappa score I can achieve, and given my prior domain specific experience with computer grahics, image processing, and computer vision, I'm hoping to build a system that is actually quite effective. For sake of the final project, getting such a system up and running, and going through the steps of training and validating it, will both be constructive experiences.
+The question I hope to answer is whether I can develop a learning model that predicts the SSA name rankings for a given year, starting with the prior historical data and a variety of readily-available data. For sake of the final project, getting such a system up and running, and going through the steps of training and validating it, will both be constructive experiences. I'm excited about the prospect of having new data coming available any week, which will be a good test of what I create.
 
 ### What data set do I plan to use, and how you will obtain the data?
-The data set is provided in the Kaggle competition. It consists of some 44,350 pairs of color retinal scan images, each pair from an individual who has been diagnosed for DR on the integer scale from 0 to 4. Given that there is some 95 GB of data here, I'm expecting to use AWS to run much of the analysis. A big part of this project will entail feature engineering, and even though this project won't involve typical munging as we've learned it in class, I'll need to write custom image processing software to detect and extract relevant features from the images, so there will plenty of clean-up code required.
-
-[Sample Data](diagnosis_levels.md)
+The baby name data set is provided from the SSA websiste. I'm still deciding which corroborating data sources to use. I'm also debating whehter to do this at a statewide or national level, since the SSA provides both kinds of data. A big part of this project will entail goal selection, data sources, and feature engineering. Dependng on my source of data, there will be a varying degree of data munging required. My plan is to pick a source that provides me some experience with this particularly important aspect of data science.
 
 ### What type of machine learning problem is this? (from our 2x2 matrix)
-This is a classification problem, supervised and categorical. I expect to use a random forest of decision trees, or perhaps some other ML approach that we haven't studied in as much depth yet.
+This will be both a clustering problem and a regression problem. I plan to use clustering to identify particular kinds of naming trends, and regression to predict a number of metrics, starting with the predicted volume and ranking of any given name for a new year. So, this project will have both an unsupervised and a supervised component. I'm still determining which algorithm I'll need to use, as I'm still getting a feel for the data and the features involved.
 
 ### Why did I choose this project?
-* I'm interested in applying data science in the field of medicine.
-* I have relevant domain specific experience.
-* The data set is large and interesting.
-* The project has a really good machine learning component to it.
-* The project has relevance and solves a real outstanding problem.
-* There's a pot of gold at the end of the rainbow if I do really, really well. 
+* Having just named my son, I'm interested in baby names.
+* I remember reading the analysis described in Freakonomics, and I'm curious about it.
+* I'd like to use that concept as a branching point for further exploration.
+* I definitely want to try my hand at some predictive task.
+* This project offers me plenty of options to pursue ideas that interst me and get some clear results.
